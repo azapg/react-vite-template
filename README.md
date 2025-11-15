@@ -57,7 +57,7 @@ bunx shadcn@latest add button card dialog
 ├── src/
 │   ├── components/
 │   │   └── ui/          # shadcn/ui components
-│   ├── App.tsx
+│   ├── home.tsx         # Home page component
 │   ├── main.tsx
 │   └── index.css
 ├── public/
@@ -66,12 +66,14 @@ bunx shadcn@latest add button card dialog
 └── tsconfig.json
 ```
 
+**File Naming Convention:** Use `this-casing.tsx` for component files (e.g., `home.tsx`, `user-profile.tsx`)
+
 ## Usage Example
 
 ```tsx
 import { Button } from "@/components/ui/button"
 
-function App() {
+function Home() {
   return (
     <div className="flex min-h-svh flex-col items-center justify-center">
       <Button>Click me</Button>
